@@ -1,0 +1,14 @@
+{
+  "name": "html-only-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server -o -c-1"
+  },
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
+  "author": "Cornelis de Mooij",
+  "license": "ISC"
+}
