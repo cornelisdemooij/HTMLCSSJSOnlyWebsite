@@ -5,7 +5,7 @@ body {
 }
 
 .banner {
-    background: url("images/linkedin background.png") no-repeat center;
+    background: url("../images/linkedin background.png") no-repeat center;
 }
 
 .portrait {
@@ -73,7 +73,7 @@ q {
 
 .yccontainer {
     overflow:hidden;
-    position:absolute;
+    position:fixed;
     bottom:0;
     right:0;
 }

@@ -10,5 +10,8 @@
     "http-server": "^0.11.1"
   },
   "author": "Cornelis de Mooij",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
 }
