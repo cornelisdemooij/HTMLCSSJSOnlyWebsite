@@ -28,7 +28,7 @@ p {
     margin: 20px 40px;
 }
 
-.navigation {
+#navigation {
     list-style-type: none;
     margin: auto;
     padding: 0;
@@ -38,10 +38,11 @@ p {
     background-color: rgb(41, 42, 37);
     text-transform: uppercase;
 }
-.navigation li {
+#navigation li {
     display: inline;
+    padding: 2px;
 }
-.navigation li a {
+#navigation li a {
     color: #fff;
     padding: 18px 36px;
     text-decoration: none;
@@ -49,11 +50,11 @@ p {
     display: inline-block;
     letter-spacing: 5px;
 }
-.navigation li a:hover {
+#navigation li a:hover {
     background-color: rgb(211, 211, 219);
     color: black;
 }
-.navigation .active {
+#navigation .active {
     background-color: rgb(216, 193, 158);
     color: white;
 }
