@@ -24,34 +24,34 @@ $(document).ready(function() {
     success: function (data) {
       //List all jpg file names in the page
       $(data).find("a:contains(" + fileExtension + ")").each(function () {
-          var filename = this.href.replace(window.location.host, "").replace("http:///","./");
-          var name = filename.slice(filename.lastIndexOf('/') + 1, filename.lastIndexOf('.')).replace(/%20/g, ' ');
-          
-          var imageContainer = document.createElement('div');
-          imageContainer.classList.add('container');
+        var filename = this.href.replace(window.location.host, "").replace("http:///","./");
+        var name = filename.slice(filename.lastIndexOf('/') + 1, filename.lastIndexOf('.')).replace(/%20/g, ' ');
+        
+        var imageContainer = document.createElement('div');
+        imageContainer.classList.add('container');
 
-          var link = document.createElement('a');
-          link.href = filename;
+        var link = document.createElement('a');
+        link.href = filename;
 
-          var image = document.createElement('img');
-          image.src = filename;
-          image.alt = name;
-          image.title = name;
+        var image = document.createElement('img');
+        image.src = filename;
+        image.alt = name;
+        image.title = name;
 
-          var description = document.createElement('p');
-          description.innerHTML = name;
+        var description = document.createElement('p');
+        description.innerHTML = name;
 
-          // Mouse events:
-          imageContainer.addEventListener("mouseover", function() { mouseOverImageContainer(imageContainer, description) });
-          imageContainer.addEventListener("mouseout", function() { mouseOutImageContainer(imageContainer, description) });
-          imageContainer.addEventListener("mousedown", function() { mouseDownLink(imageContainer, description) });
-          imageContainer.addEventListener("mouseup", function() { mouseUpLink(imageContainer, description) });
+        // Mouse events:
+        imageContainer.addEventListener("mouseover", function() { mouseOverImageContainer(imageContainer, description) });
+        imageContainer.addEventListener("mouseout", function() { mouseOutImageContainer(imageContainer, description) });
+        imageContainer.addEventListener("mousedown", function() { mouseDownLink(imageContainer, description) });
+        imageContainer.addEventListener("mouseup", function() { mouseUpLink(imageContainer, description) });
 
-          // Add to the page:
-          link.appendChild(image);
-          imageContainer.appendChild(link);
-          imageContainer.appendChild(description);
-          document.getElementById('gallery').appendChild(imageContainer);
+        // Add to the page:
+        link.appendChild(image);
+        imageContainer.appendChild(link);
+        imageContainer.appendChild(description);
+        document.getElementById('gallery').appendChild(imageContainer);
       });
     }
   });
