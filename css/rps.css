@@ -49,4 +49,17 @@
   height: 100px;
   width: 100px;
   padding: 20px;
+  cursor: pointer;
+}
+
+.hand {
+  font-size: 30px;
+  line-height: 160%;
+  cursor: pointer;
+}
+
+.menu-item {
+  font-size: 20px;
+  line-height: 240%;
+  cursor: pointer;
 }
