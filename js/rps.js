@@ -121,5 +121,5 @@ function appendDivToOutput(content) {
   appendToOutput("<div>" + content + "</div>");
 }
 function handToStyledHand(value, index) {
-  return "<span class='hand' onclick='pickHand(" + index + ");'>" + value + '</span>';
+  return "<span class='hand' onclick='pickHand(" + index + ");'>" + value + "</span>";
 }
