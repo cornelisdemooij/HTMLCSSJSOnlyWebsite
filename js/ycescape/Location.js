@@ -24,7 +24,7 @@ class Location {
   }
   image() {
     if (this.imageSrc != "") {
-      return "<img src='./images/games/YCEscape/" + this.imageSrc + "'></img>";
+      return "<img src='./images/games/YCEscape/locations/" + this.imageSrc + "'></img>";
     } else {
       return "";
     }
