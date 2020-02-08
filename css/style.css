@@ -62,7 +62,7 @@ p {
 .history {
     list-style-type: none; 
     padding: 0; 
-    margin: 0;
+    margin: 20px 0 0 0;
 }
 .history li b {
     color: #D42525;
@@ -72,19 +72,36 @@ q {
     font-style: italic;
 }
 
-.yccontainer {
-    overflow:hidden;
-    position:fixed;
-    bottom:0;
-    right:0;
+.cvlinks {
+    margin-top:54px;
+    padding:0 27px;
 }
-.yc {
-    margin: 35px 20px;
-    transform: rotate(-30deg);
-    text-align: left;
+.cvlink {
+    text-decoration: none !important;
+    border:0px !important;
+    outline:none;
+    border-width: 0px;
+    outline-width:0px;
+    border-bottom: none;
 }
-.yc a {
-    color: #e46a35;
-    text-decoration: none;
-    font-size: 30px;
+.cvlink img {
+    -webkit-box-shadow: 0px 0px 13.5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 13.5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 13.5px 0px rgba(0,0,0,0.75);
+    height:30vh;
+    margin:0 27px;
+}
+
+.iconlink {
+    text-decoration: none !important;
+    border:0px !important;
+    outline:none;
+    border-width: 0px;
+    outline-width:0px;
+    border-bottom: none;
+    margin:0 27px;
+}
+.iconlink i {
+    font-size:48px;
+    margin:47px 0;
 }
