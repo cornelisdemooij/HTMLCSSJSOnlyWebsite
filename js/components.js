@@ -39,8 +39,6 @@ let pages = {
   "Home" : "./index.html",
   "Education" : "./edu.html",
   "Experience" : "./exp.html",
-  "Gallery" : "./gallery.html",
-  "Games" : "./games.html",
 };
 
 function loadHeader(pageName) {
@@ -87,20 +85,4 @@ function loadNavigation(pageName) {
   }
 
   document.body.appendChild(ul);
-}
-
-function loadYCLink() {
-  let YCContainer = document.createElement("div");
-  YCContainer.setAttribute("class", "yccontainer");
-
-  let YC = document.createElement("div");
-  YC.setAttribute("class", "yc");
-
-  let a = document.createElement("a");
-  a.setAttribute("href", "https://www.youngcolfield.nl/");
-  a.innerHTML = "<b>Young<br><u>Colfield</u></b>";
-
-  YC.appendChild(a);
-  YCContainer.appendChild(YC);
-  document.body.appendChild(YCContainer);
 }
