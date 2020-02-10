@@ -12,6 +12,10 @@
   "author": "Cornelis de Mooij",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cornelisdemooij/HTMLCSSJSOnlyWebsite.git"
   }
 }
