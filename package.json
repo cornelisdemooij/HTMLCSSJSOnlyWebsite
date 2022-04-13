@@ -1,13 +1,20 @@
 {
   "name": "html-only-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple example website, built using only HTML, CSS and a little bit of JavaScript.",
   "main": "index.html",
   "scripts": {
-    "start": "polymer serve"
+    "start": "web-dev-server --open / --app-index index.html --node-resolve",
+    "start:watch": "web-dev-server --open / --app-index index.html --node-resolve --watch"
   },
+  "keywords": [
+    "Frontend",
+    "Website",
+    "Example"
+  ],
+  "private": false,
   "devDependencies": {
-    "polymer-cli": "^1.9.11"
+    "@web/dev-server": "^0.1.30"
   },
   "author": "Cornelis de Mooij",
   "license": "ISC",
