@@ -14,7 +14,7 @@
   ],
   "private": false,
   "devDependencies": {
-    "@web/dev-server": "^0.1.30"
+    "@web/dev-server": "^0.4.6"
   },
   "author": "Cornelis de Mooij",
   "license": "ISC",
